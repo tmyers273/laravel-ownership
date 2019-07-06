@@ -23,5 +23,12 @@
         "psr-4": {
             "TMyers273\\Tests\\": "tests/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TMyers273\\Ownership\\OwnershipServiceProvider"
+            ],
+        }
+    },
 }
