@@ -16,11 +16,11 @@ class OwnershipServiceProvider extends ServiceProvider {
         mkdir(app_path('Traits'));
 
         $this->publishes([
-            __DIR__.'/src/config/ownership.php' => config_path('ownership.php'),
+            __DIR__.'/config/ownership.php' => config_path('ownership.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/src/OwnsModel.php' => app_path('Traits/OwnsModel.php'),
+            __DIR__.'/OwnsModel.php' => app_path('Traits/OwnsModel.php'),
         ], 'trait');
     }
 
@@ -32,7 +32,7 @@ class OwnershipServiceProvider extends ServiceProvider {
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/src/config/ownership.php', 'ownership'
+            __DIR__.'/config/ownership.php', 'ownership'
         );
     }
 
