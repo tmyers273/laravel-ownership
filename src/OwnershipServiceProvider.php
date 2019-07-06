@@ -13,15 +13,15 @@ class OwnershipServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        mkdir(app_path('Traits'));
+        @mkdir(app_path('Traits'));
 
         $this->publishes([
             __DIR__.'/config/ownership.php' => config_path('ownership.php'),
-        ], 'config');
+        ], 'laravel-ownership-config');
 
         $this->publishes([
-            __DIR__.'/OwnsModel.php' => app_path('Traits/OwnsModel.php'),
-        ], 'trait');
+            __DIR__.'/OwnsModels.php' => app_path('Traits/OwnsModels.php'),
+        ], 'laravel-ownership-trait');
     }
 
     /**

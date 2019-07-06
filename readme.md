@@ -53,3 +53,26 @@ $this->json('PATCH', '/post/12345', [
 
 `composer require tmyers273/laravel-ownership`
 
+`php artisan vendor:publish --tag=laravel-ownership-config --tag=laravel-ownership-trait`
+
+Add `OwnsModels` trait to your `User` model
+```php
+use App\Traits\OwnsModels;
+
+class User extends Authenticatable
+{
+    use OwnsModels;
+}
+`
+
+Add `OwnedByUser` to each model you want to validate ownership on.
+```php
+use TMyers273\Ownership\OwnedByUser;
+
+class Post extends Model
+{
+    use OwnedByUser;
+}
+```
+
+Modify the `isAdmin` and `owns` methods on the `OwnsModels` trait to fit your needs!

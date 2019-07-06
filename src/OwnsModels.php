@@ -5,6 +5,12 @@ namespace TMyers273\Ownership;
 use Illuminate\Database\Eloquent\Model;
 use TMyers273\Tests\setup\models\TestModel;
 
+/**
+ * You will want to edit both of the methods in this file
+ *
+ * Trait OwnsModels
+ * @package TMyers273\Ownership
+ */
 trait OwnsModels {
 
     /**
