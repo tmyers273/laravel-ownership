@@ -1,0 +1,27 @@
+{
+    "name": "tom/laravel-ownership",
+    "description": "Allows ownership verification on route model binding",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Tom Myers",
+            "email": "tmyers273@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "TMyers273\\Ownership\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TMyers273\\Tests\\": "tests/"
+        }
+    }
+}
