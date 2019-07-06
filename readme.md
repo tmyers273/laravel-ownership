@@ -63,7 +63,7 @@ class User extends Authenticatable
 {
     use OwnsModels;
 }
-`
+```
 
 Add `OwnedByUser` to each model you want to validate ownership on.
 ```php
