@@ -28,7 +28,7 @@
         "laravel": {
             "providers": [
                 "TMyers273\\Ownership\\OwnershipServiceProvider"
-            ],
+            ]
         }
-    },
+    }
 }
